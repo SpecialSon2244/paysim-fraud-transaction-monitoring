@@ -16,7 +16,8 @@ The data is synthetic, and the fraud follows one scripted pattern, so these numb
 
 Stack: DuckDB SQL, Polars, Plotly, Streamlit, pytest. One `make all` rebuilds everything.
 
-Code, dashboard and memo: [REPO LINK]
+Code and memo: https://github.com/SpecialSon2244/paysim-fraud-transaction-monitoring
+Dashboard: https://public.tableau.com/app/profile/abhiram.ramakrishnan3146/viz/PaySimtransactionmonitoringwhichrulestokeep/Whichrule
 
 Data: PaySim (Lopez-Rojas, Elmir, Axelsson 2016), Kaggle ealaxi/paysim1, CC BY-SA 4.0.
 

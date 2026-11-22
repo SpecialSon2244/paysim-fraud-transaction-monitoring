@@ -171,7 +171,7 @@ Past about 300 a day almost every extra alert is a false alarm. The recommendati
 
 - Streamlit (`make dashboard`): rule scorecard, a rule builder (pick rules, "at least k of them", day range;
   computed from `exports/rule_combo_cube.csv`), the alert budget, fraud patterns, a chain example and the leakage check.
-- Tableau Public: _link to be added after publishing_ (built from `tableau/paysim_fraud_monitoring.xlsx`
+- Tableau Public: [PaySim transaction monitoring: which rules to keep](https://public.tableau.com/app/profile/abhiram.ramakrishnan3146/viz/PaySimtransactionmonitoringwhichrulestokeep/Whichrule) (built from `tableau/paysim_fraud_monitoring.xlsx`
   following [tableau/BUILD_SPEC.md](tableau/BUILD_SPEC.md)).
 
 ## Limits
