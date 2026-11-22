@@ -1,0 +1,3 @@
+is_fraud,transfer_cashout,pct_sender_books_balance,pct_amount_equals_sender_balance,pct_sender_ends_at_zero,pct_receiver_stays_zero
+0,2762196,9.21,0.0,90.1,0.06
+1,8213,99.45,97.82,98.05,49.63

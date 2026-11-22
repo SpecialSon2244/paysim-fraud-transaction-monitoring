@@ -1,0 +1,6 @@
+type,transactions,fraud,fraud_rate_pct,flagged_by_isFlaggedFraud,amount_bn,fraud_amount_bn
+CASH_OUT,2237500,4116,0.184,0,394.41,5.99
+PAYMENT,2151495,0,0.0,0,28.09,0.0
+CASH_IN,1399284,0,0.0,0,236.37,0.0
+TRANSFER,532909,4097,0.769,16,485.29,6.07
+DEBIT,41432,0,0.0,0,0.23,0.0

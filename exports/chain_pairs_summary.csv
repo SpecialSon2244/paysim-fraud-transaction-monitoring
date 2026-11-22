@@ -1,0 +1,9 @@
+lag_steps,transfer_is_fraud,cashout_is_fraud,amount_is_10m,pairs
+0,0,0,false,60
+0,0,1,true,804
+0,1,0,false,6
+0,1,1,false,3933
+0,1,1,true,339
+1,0,0,false,44
+1,0,1,true,2124
+1,1,1,true,36

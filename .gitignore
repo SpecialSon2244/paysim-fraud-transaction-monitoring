@@ -1,0 +1,10 @@
+.venv/
+__pycache__/
+*.pyc
+.pytest_cache/
+# raw PaySim CSV (494 MB), staged Parquet and the DuckDB file: rebuilt by `make data build`
+data/
+*.duckdb
+*.duckdb.wal
+*.parquet
+.DS_Store

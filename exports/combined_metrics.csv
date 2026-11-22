@@ -1,0 +1,8 @@
+rule_set,alerts,true_positives,false_positives,precision_pct,recall_pct,f1,alerts_per_day,precision_pct_first_half,recall_pct_first_half,precision_pct_second_half,recall_pct_second_half,definition
+C1 Chain + 1 more safe rule (priority queue),6682,5544,1138,82.97,67.5,0.7444,215.5,71.29,65.75,99.67,69.39,r07_chain_transfer_cashout AND (r04_amount_type_p99 OR r05_amount_vs_dest_history OR r06_new_payee_large OR r10_night_hours)
+C2 Chain rule alone (R07),10491,8153,2338,77.71,99.27,0.8718,338.4,64.74,99.13,99.09,99.42,r07_chain_transfer_cashout
+"C2b Chain rule, amount below the 10,000,000 cap",8080,7866,214,97.35,95.77,0.9656,260.6,95.63,96.93,99.33,94.53,r07_chain_transfer_cashout AND amount < 10000000
+C3 Any 2+ safe rules,14649,5547,9102,37.87,67.54,0.4853,472.5,25.15,65.78,78.33,69.44,(r04_amount_type_p99::INT + r05_amount_vs_dest_history::INT + r06_new_payee_large::INT + r07_chain_transfer_cashout::INT + r10_night_hours::INT) >= 2
+C4 Chain OR amount p99 OR night,59379,8159,51220,13.74,99.34,0.2414,1915.5,8.76,99.18,35.45,99.52,r07_chain_transfer_cashout OR r04_amount_type_p99 OR r10_night_hours
+C5 Union of all safe rules,289554,8176,281378,2.82,99.55,0.0549,9340.5,1.7,99.39,9.77,99.72,r04_amount_type_p99 OR r05_amount_vs_dest_history OR r06_new_payee_large OR r07_chain_transfer_cashout OR r10_night_hours
+C6 Union incl. leaky balance rules,291111,8176,282935,2.81,99.55,0.0546,9390.7,1.69,99.39,9.76,99.72,r04_amount_type_p99 OR r05_amount_vs_dest_history OR r06_new_payee_large OR r07_chain_transfer_cashout OR r10_night_hours OR r08_full_drain OR r09_dest_balance_unchanged
